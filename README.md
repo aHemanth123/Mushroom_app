@@ -2,7 +2,7 @@
 
 A machine learning project that classifies mushrooms as **edible** or **poisonous** using their features. The app is built using **Streamlit**, trained with **Logistic Regression**, and deployed via **Docker & Kubernetes** (Minikube).
 
----
+
 
 ## 📁 Project Structure
 
@@ -26,7 +26,7 @@ Mushroom_app/
 - 🧪 Target: `class` → edible or poisonous
 - 🔣 All features are **categorical** (e.g., cap shape, color, odor)
 
----
+
 
 ## 🔍 Data Preprocessing & EDA
 
@@ -36,7 +36,7 @@ Mushroom_app/
 4. One-hot encoded features using `pd.get_dummies()`
 5. Scaled features using `StandardScaler` (for Logistic Regression & SVM)
 
----
+
 
 ## 🤖 Model Implementation
 
@@ -50,7 +50,7 @@ Mushroom_app/
 
 Model was pickled to `logistic_model.pkl` for deployment.
 
----
+
 
 ## 🌐 Streamlit Web App
 
@@ -77,3 +77,17 @@ minikube start
 eval $(minikube docker-env)
 docker build -t mushroom-app .
 ```  
+See  deployment.yaml and service .yaml Files
+### ✅ Deploy & Access
+```
+ kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+minikube service mushroom-service
+```
+
+### Minikube Dashboard 
+
+``` Dashboard Url
+ minikube dashboard --url
+```
+To check logs,pods ,services
