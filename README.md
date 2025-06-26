@@ -7,8 +7,8 @@ A machine learning project that classifies mushrooms as **edible** or **poisonou
 ## 📁 Project Structure
 
 Mushroom_app/    
-├── app.py      # Streamlit web app    
-├── logistic_model.pkl       # Trained Logistic Regression model    
+├── app.py      
+├── logistic_model.pkl       
 ├── scaler.pkl          
 ├── feature_columns.pkl   
 ├── requirements.txt         
