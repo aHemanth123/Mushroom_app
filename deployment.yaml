@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mushroom-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mushroom
+  template:
+    metadata:
+      labels:
+        app: mushroom
+    spec:
+      containers:
+      - name: mushroom-container
+        image: hemanth251/mushroom-app:latest
+        ports:
+        - containerPort: 8501

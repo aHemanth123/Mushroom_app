@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mushroom-service
+spec:
+  selector:
+    app: mushroom
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8501
