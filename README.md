@@ -34,7 +34,7 @@ Mushroom_app/
 2. Visualized categorical feature distributions using `countplot` 📊
 3. Used **Cramér's V** for categorical correlation with target
 4. One-hot encoded features using `pd.get_dummies()`
-5. Scaled features using `StandardScaler` (for Logistic Regression & SVM)
+5. Scaled features using `StandardScaler`  
 
 
 
